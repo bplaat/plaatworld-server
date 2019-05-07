@@ -1,0 +1,23 @@
+{
+  "name": "plaatworld-server",
+  "version": "1.0.0",
+  "description": "A simple adventure meme game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bplaat/plaatworld-server.git"
+  },
+  "author": "Bastiaan van der Plaat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bplaat/plaatworld-server/issues"
+  },
+  "homepage": "https://github.com/bplaat/plaatworld-server#readme",
+  "dependencies": {
+    "ws": "^7.0.0"
+  }
+}
