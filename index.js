@@ -96,7 +96,7 @@ var objects = [
     } },
 
     // Trees
-    { x: -800, y: 50, width: 300, height: 300, url: 'tree.png', enter: treeEnter },
+    { x: -850, y: 50, width: 300, height: 300, url: 'tree.png', enter: treeEnter },
     { x: 300, y: 850, width: 300, height: 300, url: 'tree.png', enter: treeEnter },
     { x: 100, y: 2400, width: 300, height: 300, url: 'tree.png', enter: treeEnter },
     { x: -100, y: -1600, width: 300, height: 300, url: 'tree.png', enter: treeEnter },
