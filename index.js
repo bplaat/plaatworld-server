@@ -80,9 +80,11 @@ var objects = [
     } },
     { x: 10350, y: 10150, width: 100, height: 200, url: 'armor.jpg', enter: function (player_id) {
         if (players[player_id].money >= 10) {
-            players[player_id].max_health += rand(1, 10);
+            var s = rand(1, 10);
+            players[player_id].health += s;
+            players[player_id].max_health += s;
             players[player_id].money -= 10;
-            broadcast({ type: 'player_change', player_id: player_id, max_health: players[player_id].max_health, money: players[player_id].money });
+            broadcast({ type: 'player_change', player_id: player_id, health: players[player_id].health, max_health: players[player_id].max_health, money: players[player_id].money });
         }
     } },
     { x: 10100, y: 10250, width: 200, height: 150, url: 'shoes.jpg', enter: function (player_id) {
@@ -114,12 +116,6 @@ var objects = [
     } },
     { x: 400, y: -2000, width: 500, height: 500, url: 'bank.jpg', enter: function (player_id) {
         players[player_id].money += rand(0, 2);
-        broadcast({ type: 'player_change', player_id: player_id, money: players[player_id].money });
-    } },
-
-    // Treasure
-    { x: 165892, y: 165892, width: 300, height: 300, url: 'treasure.jpg', enter: function (player_id) {
-        players[player_id].money += rand(5000, 10000);
         broadcast({ type: 'player_change', player_id: player_id, money: players[player_id].money });
     } }
 ];
