@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/bplaat/plaatworld-server#readme",
   "dependencies": {
-    "ws": "^7.0.0"
+    "ws": "^7.5.8"
   }
 }
